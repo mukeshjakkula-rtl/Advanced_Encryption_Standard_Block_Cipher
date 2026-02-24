@@ -30,10 +30,10 @@ The architecture is designed for high-speed RTL synthesis:
 
 ## Design Hierarchy
 * `file_reader.v`: Handles input data ingestion for simulation environments.
-* `lfsr_core.v`: The pseudo-random generator with a primitive polynomial which repeates sequence 82-cycles.
-* `sbox_gf_top.v`: The Galois Field-based confusion module.
-* `pbox_diffuse.v`: Bit-permutation and data scrambling logic.
-* `cipher_top.v`: The top-level module integrating the pipeline stages.
+* `lfsr.v`: The pseudo-random generator with a primitive polynomial which repeates sequence 82-cycles.
+* `sbox.v`: The Galois Field-based confusion module.
+* `pbox.v`: Bit-permutation and data scrambling logic.
+* `block_cipher_top.v`: The top-level module integrating the pipeline stages.
 
 ## Micro-Architecture 
 
