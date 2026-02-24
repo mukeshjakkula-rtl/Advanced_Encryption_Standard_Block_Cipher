@@ -11,7 +11,7 @@ initial begin
   file_handle = $fopen("audio_data_file.txt", "r");
   while(!$feof(file_handle)) begin
     @(posedge clk)  
-         status = $fscanf(file_handle, "%b", audio_data);
+	   status = $fscanf(file_handle, "%8b", audio_data);
 	 $display("data : %b", audio_data);
  end
    $fclose(file_handle);
